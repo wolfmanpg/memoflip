@@ -118,6 +118,8 @@ export default {
       startNextLevel,
 
       finishLevel(levelScore) {
+        $store.dispatch("game/updateScore", levelScore);
+
         $store.dispatch("game/updateLevel").then(() => {
           currentLevel.value = $store.getters["game/getCurrentLevel"];
 
@@ -127,8 +129,6 @@ export default {
           isGameFinished.value = $store.getters["game/getIsGameFinished"];
           gameScore.value = $store.getters["game/getCurrentScore"];
         });
-
-        $store.dispatch("game/updateScore", levelScore);
       },
 
       nextLevel() {
