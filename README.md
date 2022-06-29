@@ -1,5 +1,9 @@
 # memoflip
 
+A memory flipping cards game. Flip cards and memorize the number behind the cards, to find their pair, and complete a level
+
+Complete all the levels and win the game !
+
 ## Project setup
 ```
 npm install
@@ -20,5 +24,5 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Public link for the game  :
+https://memoflip.netlify.app/game
