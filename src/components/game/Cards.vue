@@ -132,7 +132,7 @@ export default {
       ).length;
 
       //check if all the cards has their match found 
-      if (totalMatchesFound <= props.totalCards) {
+      if (totalMatchesFound === props.totalCards) {
         let levelScore = Math.round( (props.totalCards / tries.value) * 100);
         emit("levelFinished", levelScore);
       }
