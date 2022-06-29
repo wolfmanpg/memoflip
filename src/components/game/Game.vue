@@ -6,17 +6,11 @@
           <base-button title="Quit Game" @click="resetGame"></base-button>
         </h2>
 
-        <h2
-          class="text-primary font-bold text-5xl"
-          v-if="!isGameFinished"
-        >
+        <h2 class="text-primary font-bold text-5xl" v-if="!isGameFinished">
           Level {{ currentLevel }}
         </h2>
 
-        <h3
-          class="text-primary text-right text-3xl"
-          v-if="!isGameFinished"
-        >
+        <h3 class="text-primary text-right text-3xl" v-if="!isGameFinished">
           Score : <span class="font-bold">{{ gameScore }}</span>
         </h3>
       </div>
@@ -58,7 +52,7 @@
                     title="Play Again"
                     @click="playAgain"
                   ></base-button>
-                 <base-button
+                  <base-button
                     title="Main Menu"
                     :isLink="true"
                     url="/"
