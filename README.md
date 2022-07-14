@@ -25,4 +25,4 @@ npm run lint
 ```
 
 Public link for the game  :
-https://memoflip.netlify.app/game
+https://memoflip.netlify.app
